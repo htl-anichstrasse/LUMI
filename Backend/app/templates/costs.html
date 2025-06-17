@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/costs.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Cost Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cost Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Costs</a></li>
+                <li><a href="">Add Cost</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="left">
+                    <div class="card-container">
+                        <div class="card">
+                            <span class="icon"><i class="bi bi-tag-fill"></i></span>
+                            <p class="desc">total costs</p>
+                            <h2 class="value">${{ total_costs }}</h2>
+                        </div>
+                        <div class="card">
+                            <span class="icon"><i class="bi bi-calendar2-month-fill"></i></span>
+                            <p class="desc">last month</p>
+                            <h2 class="value">${{ costs_last_month }}</h2>
+                        </div>
+                        <div class="card">
+                            <span class="icon"><i class="bi bi-asterisk"></i></span>
+                            <p class="desc">avg. per month</p>
+                            <h2 class="value">${{ avg_costs_per_month }}</h2>
+                        </div>
+                        <div class="card">
+                            <span class="icon"><i class="bi bi-info"></i></span>
+                            <p class="desc">avg. per day</p>
+                            <h2 class="value">${{ avg_costs_per_day }}</h2>
+                        </div>
+                    </div>
+                    <div class="diagram-container-bottom">
+                        <div class="diagram-container">
+                            <div class="line-diagram card">
+                                <div class="heading">
+                                    <h2>Costs</h2>
+                                    <p>per type</p>
+                                </div>
+                                <canvas id="costs-per-type"></canvas>
+                            </div>
+                        </div>
+                        <div class="diagram-container">
+                            <div class="line-diagram card">
+                                <div class="heading">
+                                    <h2>Costs</h2>
+                                    <p>per model/type</p>
+                                </div>
+                                <canvas id="costs-per-model-and-type"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="diagram-container">
+                        <div class="line-diagram card">
+                            <div class="heading">
+                                <h2>Costs</h2>
+                                <p>per month</p>
+                            </div>
+                            <canvas id="costs-per-month"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+    <script>
+        costs_per_month = {{ costs_per_month | tojson }};
+        costs_per_type = {{ costs_per_type | tojson }};
+        console.log(costs_per_type);
+    </script>
+
+    <script src="{{ url_for('static', filename='js/costs.js') }}"></script>
+</body>
+
+</html>

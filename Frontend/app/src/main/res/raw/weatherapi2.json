@@ -1,0 +1,47 @@
+{
+  "application": "weather2",
+  "coord": {
+    "lon": 10.8814,
+    "lat": 47.2533
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "Bedeckt",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 300.58,
+    "feels_like": 305.98,
+    "temp_min": 300.58,
+    "temp_max": 302.2,
+    "pressure": 1021,
+    "humidity": 96,
+    "sea_level": 1021,
+    "grnd_level": 848
+  },
+  "visibility": 3659,
+  "wind": {
+    "speed": 2.93,
+    "deg": 256,
+    "gust": 4.87
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1725119465,
+  "sys": {
+    "type": 1,
+    "id": 6872,
+    "country": "AT",
+    "sunrise": 1725078883,
+    "sunset": 1725127150
+  },
+  "timezone": 7200,
+  "id": 2777001,
+  "name": "Haiming",
+  "cod": 200
+}

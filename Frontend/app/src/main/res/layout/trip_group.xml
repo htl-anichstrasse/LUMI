@@ -1,0 +1,10 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="18sp"
+    android:textColor="#2A5D8F"
+    android:textStyle="bold"
+    android:background="@android:color/white"
+    android:id="@+id/trip_title"/>

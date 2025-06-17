@@ -1,0 +1,233 @@
+:root {
+    --background-color: #1E1E2F;
+    --card-color: #3A3A4A;
+    --primary-color: #00BFFF;
+    --diagram-color-1: #4A90E2;
+    --diagram-color-2: #50E3C2;
+    --diagram-color-3: #F5A623;
+    --diagram-color-4: #D0021B;
+}
+
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* 
+----------------------------------------
+    Header
+----------------------------------------    
+*/
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--card-color);
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: normal;
+    width: 40%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav {
+    width: 50%;
+    text-align: right;
+}
+
+/* 
+----------------------------------------
+    Main
+----------------------------------------    
+*/
+
+main {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+.card-container {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-container .card {
+    height: 230px;
+    width: 24%;
+}
+
+.card-container .card .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container .card .icon i {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.card-container .card:nth-child(1) .icon i {
+    color: #4E7CC7;
+    background-color: rgba(45, 45, 59, 0.5); /* #2d2d3b */
+}
+
+.card-container .card:nth-child(2) .icon i {
+    color: #00a336;
+    background-color: rgba(44, 87, 57, 0.5); /* #2c5739 */
+}
+
+.card-container .card:nth-child(3) .icon i {
+    color: #ffcc00;
+    background-color: rgba(60, 65, 37, 0.5); /* #3c4125 */
+}
+
+.card-container .card:nth-child(4) .icon i {
+    color: #ff6600;
+    background-color: rgba(65, 37, 37, 0.5); /* #412525 */
+}
+
+.card-container .card h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.card-container .card .desc {
+    color: #9696b4;
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    margin-top: auto;
+    text-transform: uppercase;
+}
+
+/*
+----------------------------------------
+    Diagrams
+----------------------------------------
+*/
+
+.diagram-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.line-diagram {
+    width: 100%;
+    max-height: 400px;
+}
+
+#costs-per-month {
+    max-height: 60%;
+}
+
+.diagram-container .heading {
+    margin: 20px;
+}
+
+.diagram-container .heading h2 {
+    margin: 0;
+    float: left;
+    text-transform: uppercase;
+}
+
+.diagram-container .heading p {
+    padding-top: 20px;
+    color: #9696b4;
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    margin-top: auto;
+    text-transform: uppercase;
+    float: right;
+}
+
+.diagram-container-bottom {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.diagram-container-bottom .diagram-container {
+    width: 47%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.diagram-container-bottom .diagram-container canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.diagram-container-bottom .diagram-container .line-diagram {
+    min-height: 525px;
+}

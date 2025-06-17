@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:background="@drawable/rounded_background"
+    android:backgroundTint="#4F4F4F">
+
+
+    <LinearLayout
+        android:id="@+id/weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weather_card_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Aktuelle Temperatur -->
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="28°C"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <!-- Beschreibung des Wetters -->
+        <TextView
+            android:id="@+id/weather_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Überwiegend sonnig"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- Weitere Wetterinformationen -->
+        <TextView
+            android:id="@+id/additional_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Höchstwert: 28° Tiefstwert: 13° Ndschl.: 20%"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Standort und Datum -->
+        <TextView
+            android:id="@+id/location_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Donnerstag · Haiming, Tirol"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <!-- Stündliche Vorhersage -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/hourly_forecast_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Hier werden hourly_item.xml eingefügt -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+        <!-- Quelle -->
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="openweathermap.org"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

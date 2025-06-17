@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="16dp">
+
+    <!-- Container mit abgerundeten Ecken -->
+    <LinearLayout
+        android:id="@+id/alarm_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#55000000"
+        android:gravity="center"
+        android:clickable="false">
+
+        <!-- Uhrzeit anzeigen -->
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--:-- Uhr"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <!-- Trennlinie -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F5F5F5"/>
+
+        <!-- Wecker ansehen Text -->
+        <TextView
+            android:id="@+id/view_alarm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wann soll der Wecker gestellt werden?"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

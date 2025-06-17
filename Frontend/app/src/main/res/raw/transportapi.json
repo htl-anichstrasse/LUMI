@@ -1,0 +1,55 @@
+{
+  "trips": [
+    {
+      "departure_time": "11:52:00",
+      "departure_track": "31",
+      "line": "REX1",
+      "icon": "fahrplan.oebb.at/webapp/img/light/products/haf_prod_ic.svg",
+      "arrival_time": "12:30:00",
+      "arrival_track": "3",
+      "travel_time": "0:38",
+      "delay": "0"
+    },
+    {
+      "departure_time": "12:22:00",
+      "departure_track": "31",
+      "line": "REX1",
+      "icon": "fahrplan.oebb.at/webapp/img/light/products/haf_prod_ic.svg",
+      "arrival_time": "12:59:00",
+      "arrival_track": "3",
+      "travel_time": "0:37",
+      "delay": "0"
+    },
+    {
+      "departure_time": "12:52:00",
+      "departure_track": "31",
+      "line": "REX1",
+      "icon": "fahrplan.oebb.at/webapp/img/light/products/haf_prod_ic.svg",
+      "arrival_time": "13:29:00",
+      "arrival_track": "1D-E",
+      "travel_time": "0:37",
+      "delay": "0"
+    },
+    {
+      "departure_time": "13:22:00",
+      "departure_track": "31",
+      "line": "REX1",
+      "icon": "fahrplan.oebb.at/webapp/img/light/products/haf_prod_ic.svg",
+      "arrival_time": "13:59:00",
+      "arrival_track": "3",
+      "travel_time": "0:37",
+      "delay": "0"
+    },
+    {
+      "departure_time": "13:47:00",
+      "departure_track": "3",
+      "line": "RJX 162",
+      "icon": "fahrplan.oebb.at/webapp/img/light/products/haf_prod_ic.svg",
+      "arrival_time": "14:10:00",
+      "arrival_track": "3",
+      "travel_time": "0:23",
+      "delay": "0"
+    }
+  ],
+  "application": "transport"
+}

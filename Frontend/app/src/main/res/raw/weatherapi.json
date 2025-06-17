@@ -1,0 +1,375 @@
+{
+  "application": "weather",
+  "current_weather": {
+    "coord": {
+      "lon": 11.4004,
+      "lat": 47.2597
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "Mäßig bewölkt",
+        "icon": "03d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 295.12,
+      "feels_like": 294.57,
+      "temp_min": 295.12,
+      "temp_max": 295.48,
+      "pressure": 1005,
+      "humidity": 46,
+      "sea_level": 1005,
+      "grnd_level": 848
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.17,
+      "deg": 0,
+      "gust": 14.4
+    },
+    "clouds": {
+      "all": 40
+    },
+    "dt": 1727354237,
+    "sys": {
+      "type": 1,
+      "id": 6872,
+      "country": "AT",
+      "sunrise": 1727327206,
+      "sunset": 1727370267
+    },
+    "timezone": 7200,
+    "id": 2775220,
+    "name": "Innsbruck",
+    "cod": 200
+  },
+  "forecast": {
+    "cod": "200",
+    "message": 0,
+    "cnt": 8,
+    "list": [
+      {
+        "dt": 1727362800,
+        "main": {
+          "temp": 293.67,
+          "feels_like": 293.19,
+          "temp_min": 290.77,
+          "temp_max": 293.67,
+          "pressure": 1004,
+          "sea_level": 1004,
+          "grnd_level": 846,
+          "humidity": 54,
+          "temp_kf": 2.9
+        },
+        "weather": [
+          {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+          }
+        ],
+        "clouds": {
+          "all": 55
+        },
+        "wind": {
+          "speed": 3.04,
+          "deg": 178,
+          "gust": 3.97
+        },
+        "visibility": 10000,
+        "pop": 0.02,
+        "sys": {
+          "pod": "d"
+        },
+        "dt_txt": "2024-09-26 15:00:00"
+      },
+      {
+        "dt": 1727373600,
+        "main": {
+          "temp": 290.03,
+          "feels_like": 289.71,
+          "temp_min": 287.49,
+          "temp_max": 290.03,
+          "pressure": 1004,
+          "sea_level": 1004,
+          "grnd_level": 847,
+          "humidity": 74,
+          "temp_kf": 2.54
+        },
+        "weather": [
+          {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
+          }
+        ],
+        "clouds": {
+          "all": 67
+        },
+        "wind": {
+          "speed": 1.98,
+          "deg": 213,
+          "gust": 3.19
+        },
+        "visibility": 10000,
+        "pop": 0.02,
+        "sys": {
+          "pod": "n"
+        },
+        "dt_txt": "2024-09-26 18:00:00"
+      },
+      {
+        "dt": 1727384400,
+        "main": {
+          "temp": 287.08,
+          "feels_like": 287.09,
+          "temp_min": 287.08,
+          "temp_max": 287.08,
+          "pressure": 1007,
+          "sea_level": 1007,
+          "grnd_level": 849,
+          "humidity": 98,
+          "temp_kf": 0
+        },
+        "weather": [
+          {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10n"
+          }
+        ],
+        "clouds": {
+          "all": 100
+        },
+        "wind": {
+          "speed": 0.4,
+          "deg": 347,
+          "gust": 0.48
+        },
+        "visibility": 3315,
+        "pop": 1,
+        "rain": {
+          "3h": 3.37
+        },
+        "sys": {
+          "pod": "n"
+        },
+        "dt_txt": "2024-09-26 21:00:00"
+      },
+      {
+        "dt": 1727395200,
+        "main": {
+          "temp": 287.2,
+          "feels_like": 287.25,
+          "temp_min": 287.2,
+          "temp_max": 287.2,
+          "pressure": 1007,
+          "sea_level": 1007,
+          "grnd_level": 848,
+          "humidity": 99,
+          "temp_kf": 0
+        },
+        "weather": [
+          {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10n"
+          }
+        ],
+        "clouds": {
+          "all": 100
+        },
+        "wind": {
+          "speed": 1.26,
+          "deg": 315,
+          "gust": 1.66
+        },
+        "visibility": 2071,
+        "pop": 1,
+        "rain": {
+          "3h": 9.03
+        },
+        "sys": {
+          "pod": "n"
+        },
+        "dt_txt": "2024-09-27 00:00:00"
+      },
+      {
+        "dt": 1727406000,
+        "main": {
+          "temp": 286.6,
+          "feels_like": 286.53,
+          "temp_min": 286.6,
+          "temp_max": 286.6,
+          "pressure": 1007,
+          "sea_level": 1007,
+          "grnd_level": 849,
+          "humidity": 97,
+          "temp_kf": 0
+        },
+        "weather": [
+          {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10n"
+          }
+        ],
+        "clouds": {
+          "all": 100
+        },
+        "wind": {
+          "speed": 0.19,
+          "deg": 108,
+          "gust": 0.44
+        },
+        "visibility": 10000,
+        "pop": 1,
+        "rain": {
+          "3h": 7.35
+        },
+        "sys": {
+          "pod": "n"
+        },
+        "dt_txt": "2024-09-27 03:00:00"
+      },
+      {
+        "dt": 1727416800,
+        "main": {
+          "temp": 286.34,
+          "feels_like": 286.27,
+          "temp_min": 286.34,
+          "temp_max": 286.34,
+          "pressure": 1007,
+          "sea_level": 1007,
+          "grnd_level": 849,
+          "humidity": 98,
+          "temp_kf": 0
+        },
+        "weather": [
+          {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+          }
+        ],
+        "clouds": {
+          "all": 100
+        },
+        "wind": {
+          "speed": 0.78,
+          "deg": 31,
+          "gust": 1.45
+        },
+        "visibility": 10000,
+        "pop": 1,
+        "rain": {
+          "3h": 0.11
+        },
+        "sys": {
+          "pod": "d"
+        },
+        "dt_txt": "2024-09-27 06:00:00"
+      },
+      {
+        "dt": 1727427600,
+        "main": {
+          "temp": 286.31,
+          "feels_like": 286.21,
+          "temp_min": 286.31,
+          "temp_max": 286.31,
+          "pressure": 1008,
+          "sea_level": 1008,
+          "grnd_level": 849,
+          "humidity": 97,
+          "temp_kf": 0
+        },
+        "weather": [
+          {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+          }
+        ],
+        "clouds": {
+          "all": 100
+        },
+        "wind": {
+          "speed": 1.48,
+          "deg": 52,
+          "gust": 2.45
+        },
+        "visibility": 10000,
+        "pop": 1,
+        "rain": {
+          "3h": 1.17
+        },
+        "sys": {
+          "pod": "d"
+        },
+        "dt_txt": "2024-09-27 09:00:00"
+      },
+      {
+        "dt": 1727438400,
+        "main": {
+          "temp": 286.56,
+          "feels_like": 286.46,
+          "temp_min": 286.56,
+          "temp_max": 286.56,
+          "pressure": 1008,
+          "sea_level": 1008,
+          "grnd_level": 849,
+          "humidity": 96,
+          "temp_kf": 0
+        },
+        "weather": [
+          {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+          }
+        ],
+        "clouds": {
+          "all": 100
+        },
+        "wind": {
+          "speed": 1.71,
+          "deg": 55,
+          "gust": 2.99
+        },
+        "visibility": 4804,
+        "pop": 1,
+        "rain": {
+          "3h": 1.03
+        },
+        "sys": {
+          "pod": "d"
+        },
+        "dt_txt": "2024-09-27 12:00:00"
+      }
+    ],
+    "city": {
+      "id": 2775220,
+      "name": "Innsbruck",
+      "coord": {
+        "lat": 47.2597,
+        "lon": 11.4004
+      },
+      "country": "AT",
+      "population": 112467,
+      "timezone": 7200,
+      "sunrise": 1727327206,
+      "sunset": 1727370267
+    }
+  }
+}
